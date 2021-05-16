@@ -22,9 +22,19 @@ namespace Api.Data.Imp
             _db.SaveChanges();
         }
 
+        public Pessoa GetById(int id)
+        {
+            return _db.Pessoas.Find(id);
+        }
+
         public List<Pessoa> Get()
         {
             return _db.Pessoas.ToList();
+        }
+
+        public void Delete(Pessoa pessoa)
+        {
+            _db.Remove(pessoa);
         }
     }
 }

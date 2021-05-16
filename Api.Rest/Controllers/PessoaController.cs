@@ -29,9 +29,10 @@ namespace Api.Rest.Controllers
         }
 
         [HttpGet("{id}")]
-        public string Get(int id)
+        public ActionResult Get(int id)
         {
-            return "value";
+            var pessoa = _repository.GetById(id);
+            return Ok(pessoa);
         }
 
         [HttpPost]
