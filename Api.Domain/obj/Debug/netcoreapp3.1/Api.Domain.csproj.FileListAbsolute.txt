@@ -1,0 +1,9 @@
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\bin\Debug\netcoreapp3.1\Api.Domain.deps.json
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\bin\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\bin\Debug\netcoreapp3.1\Api.Domain.pdb
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.csprojAssemblyReference.cache
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.AssemblyInfo.cs
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.dll
+C:\Users\USER\source\repos\MinhaApiRest\Api.Domain\obj\Debug\netcoreapp3.1\Api.Domain.pdb
