@@ -10,6 +10,7 @@ namespace Api.Data.Interfaces
         List<Pessoa> Get();
         Pessoa GetById(int id);
         void Add(Pessoa pessoa);
-        void Delete(Pessoa pessoa);
+        void Atualizar(Pessoa pessoa);
+        void Delete(int id);
     }
 }

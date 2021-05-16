@@ -1,10 +1,7 @@
 ﻿using Api.Data.Interfaces;
 using Api.Domain;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Api.Data.Imp;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -42,14 +39,20 @@ namespace Api.Rest.Controllers
             return StatusCode(201);
         }
 
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpPut("{id:int}")]
+        public ActionResult Put(int id, Pessoa pessoa)
         {
+            pessoa.Id = id;
+            _repository.Atualizar(pessoa);
+            return StatusCode(200);
+
         }
 
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            _repository.Delete(id);
+            return StatusCode(200);
         }
     }
 }

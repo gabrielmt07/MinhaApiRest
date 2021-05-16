@@ -32,9 +32,17 @@ namespace Api.Data.Imp
             return _db.Pessoas.ToList();
         }
 
-        public void Delete(Pessoa pessoa)
+        public void Atualizar(Pessoa pessoa)
         {
+            _db.Update(pessoa);
+            _db.SaveChanges();
+        }
+
+        public void Delete(int id)
+        {
+            var pessoa = GetById(id);
             _db.Remove(pessoa);
+            _db.SaveChanges();
         }
     }
 }
